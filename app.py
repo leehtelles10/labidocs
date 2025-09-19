@@ -10,7 +10,7 @@ import textwrap
 import base64
 import qrcode
 # import pypandoc
-import pythoncom
+#import pythoncom
 import urllib.parse
 import streamlit.components.v1 as components
 from docx import Document
