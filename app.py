@@ -10,7 +10,7 @@ import textwrap
 import base64
 import qrcode
 # import pypandoc
-#import pythoncom
+# import pythoncom
 import urllib.parse
 import streamlit.components.v1 as components
 from docx import Document
@@ -27,7 +27,7 @@ from datetime import datetime
 # from pixqrcodegen import Payload
 
 
-pythoncom.CoInitialize()
+# pythoncom.CoInitialize()
 
 
 # Função para gerar BR Code (manual)
@@ -1469,4 +1469,4 @@ if st.session_state.documentacao_gerada:
     """, height=220)
 
 
-pythoncom.CoUninitialize()
+# pythoncom.CoUninitialize()
