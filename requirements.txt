@@ -1,0 +1,9 @@
+streamlit
+requests
+python-docx
+docx2pdf
+Pillow
+qrcode
+pywin32 ; platform_system == "Windows"
+pytest
+flake8
