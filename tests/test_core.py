@@ -2,7 +2,7 @@ import os
 import tempfile
 import pytest
 
-import app as app
+from .. import app
 
 
 def test_importa_app():
@@ -14,11 +14,12 @@ def test_importa_app():
 def test_extrair_metadados_vazio():
     """Chama extrair_metadados em um arquivo inexistente e espera lista vazia."""
     resultado = app.extrair_metadados("arquivo_que_nao_existe.tmdl")
-    assert isinstance(resultado, list)
+    assert resultado == ([], [], [], [])
+    # assert isinstance(resultado, list)
 
 
 def test_processar_projeto_zip_vazio():
     """Cria um zip vazio temporário e testa processar_projeto."""
     with tempfile.NamedTemporaryFile(suffix=".zip") as tmpzip:
-        resultado = app.processar_projeto(tmpzip.name)
-        assert isinstance(resultado, list)
+        resultado = app.processar_projeto(tmpzip.name, [], None)
+        assert resultado is None
