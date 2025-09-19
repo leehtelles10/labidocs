@@ -1,6 +1,7 @@
 # LabiDocs — Documentador Power BI
 
-[![CI](https://img.shields.io/badge/ci-pending-lightgrey)](https://github.com/<seu-usuario>/labidocs/actions)
+[![CI](https://github.com/leehtelles10/labidocs/actions/workflows/ci.yml/badge.svg)](https://github.com/leehtelles10/labidocs/actions)
+[![codecov](https://codecov.io/gh/leehtelles10/labidocs/branch/main/graph/badge.svg?token=)](https://codecov.io/gh/leehtelles10/labidocs)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
 ## Descrição

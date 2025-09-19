@@ -6,4 +6,5 @@ Pillow
 qrcode
 pywin32 ; platform_system == "Windows"
 pytest
+pytest-cov
 flake8
