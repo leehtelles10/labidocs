@@ -9,7 +9,7 @@ import io
 import textwrap
 import base64
 import qrcode
-import pypandoc
+# import pypandoc
 import pythoncom
 import urllib.parse
 import streamlit.components.v1 as components
@@ -1375,8 +1375,8 @@ if disponivel:
 
                 try:
                     # A mágica acontece aqui!
-                    pypandoc.convert_file(
-                        output_docx, 'pdf', outputfile=output_pdf)
+                    # pypandoc.convert_file(
+                    #   output_docx, 'pdf', outputfile=output_pdf)
 
                     with open(output_docx, "rb") as f_docx, open(output_pdf, "rb") as f_pdf:
                         st.session_state.docx_bytes = f_docx.read()
